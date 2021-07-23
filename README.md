@@ -29,5 +29,6 @@ cat /var/lib/tor/hidden_service/hostname
 
 
 **To remove the container:**
-
+```sh
 sudo docker rm -fv mydarkweb
+```
