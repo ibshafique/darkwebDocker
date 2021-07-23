@@ -7,6 +7,7 @@ Host a website on the Dark Web. A  docker container is connected to the ToR netw
 sudo docker build -t tordocker .
 ```
 
+
 **To run the image for testing:**
 
 ```sh
@@ -16,6 +17,7 @@ sudo docker run \
 -v /docker/torweb/nginx:/var/www/html/ \
 --restart unless-stopped
 ```
+
 **Log into the container with the following:**
 
 ```sh
@@ -23,12 +25,14 @@ sudo docker exec -it mydarkweb bash
 ```
 
 **To find out the link of the onion URL:**
+
 ```sh
 cat /var/lib/tor/hidden_service/hostname
 ```
 
 
 **To remove the container:**
+
 ```sh
 sudo docker rm -fv mydarkweb
 ```
