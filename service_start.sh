@@ -3,5 +3,9 @@ service tor stop
 service nginx stop
 service tor start
 service nginx start
-echo "your onion darkwebsite link is:"
-cat /var/lib/tor/hidden_service/hostname
+while :
+do
+        echo Keep running
+        echo "Press CTRL+C to exit"
+        sleep 1
+done
