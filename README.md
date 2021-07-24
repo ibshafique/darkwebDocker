@@ -1,12 +1,18 @@
 # darkwebDocker
 Host a website on the Dark Web. A  docker container is connected to the ToR network and is being used as on Onion Service. It's basically a Dark Web website running in a Docker!
 
-**To build the container in x86 Architecture:**
+**To build the container in x86_T64 Architecture:**
 
 ```sh
 sudo docker build -t tordocker .
 ```
+**To build the container in x86_T64 Architecture:**
 
+```sh
+sudo mv $PWD/Dockerfile $PWD/Dockerfilex86
+sudo mv $PWD/DockerFilePi $PWD/Dockerfile
+sudo docker build -t tordocker .
+```
 
 **To run the image for testing:**
 
