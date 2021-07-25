@@ -9,12 +9,13 @@ sudo docker build -t tordocker -f Dockerfile .
 **To build the container in arm Architecture:**
 
 ```sh
-sudo docker build -t tordocker DockerFilePi .
+sudo docker build -f tordocker DockerFilePi .
 ```
 
 **To run the image for testing:**
 
 ```sh
+sudo mkdir -p /docker/torweb/nginx 
 sudo docker run \
 --name mydarkweb \
 -h torr -d tordocker \
