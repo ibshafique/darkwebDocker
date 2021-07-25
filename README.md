@@ -4,14 +4,12 @@ Host a website on the Dark Web. A  docker container is connected to the ToR netw
 **To build the container in x86_T64 Architecture:**
 
 ```sh
-sudo docker build -t tordocker .
+sudo docker build -t tordocker -f Dockerfile .
 ```
-**To build the container in x86_T64 Architecture:**
+**To build the container in arm Architecture:**
 
 ```sh
-sudo mv $PWD/Dockerfile $PWD/Dockerfilex86
-sudo mv $PWD/DockerFilePi $PWD/Dockerfile
-sudo docker build -t tordocker .
+sudo docker build -t tordocker DockerFilePi .
 ```
 
 **To run the image for testing:**
